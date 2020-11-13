@@ -1,6 +1,9 @@
 #Data preparation
-module load StdEnv/2020
-module load samtools/1.10
+module load samtools
+
+I think I;m supposed to
+align bam file
+index a file
 
 DBG2OLC 
 
