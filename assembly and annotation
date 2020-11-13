@@ -1,0 +1,63 @@
+DBG2OLC 
+
+_______ 
+
+  
+
+  
+
+last update: Jun 11, 2015. 
+
+Loading contigs. 
+
+terminate called after throwing an instance of 'std::bad_alloc' 
+
+  what():  std::bad_alloc 
+
+Aborted 
+
+[shane88@gra-login1 AROGYAPACHA]$ ./DBG2OLC k 17 AdaptiveTh 0.0001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs output61.contig f SRR7881464_1.fastq   
+
+  
+
+  
+
+try with sparse alloc output 
+
+  
+
+try paired end input 
+
+  
+
+ARE THE FRESH READS INDEXED AND ALIGNED?
+
+  
+
+./DBG2OLC k KmerSize AdaptiveTh THRESH_VALUE1 KmerCovTh THRESH_VALUE2 MinOverlap THRESH_VALUE3 Contigs op61contig.mmi f SRR7881464_1.fastq RemoveChimera 1 
+
+  
+
+./DBG2OLC k 17 AdaptiveTh 0.0001 KmerCovTh 2 MinOverlap 20 Contigs output61.contig f SRR7881464_1.fastq RemoveChimera 1 
+
+  
+
+  
+
+./DBG2OLC k 17 AdaptiveTh 0.001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs output61.contig f SRR7881464_1.fastq > DBG2OLC.log 
+
+                             
+
+./DBG2OLC k 17 AdaptiveTh 0.0001 KmerCovTh 2 MinOverlap 20 Contigs sd2o61.fasta f SRR7881464_1.fastq RemoveChimera 1 
+
+  
+
+  
+
+MASURCA 
+
+_______ 
+
+Create new untrimmed reads 
+
+Are paired end reads actually innies?     
