@@ -1,0 +1,2 @@
+history |  cut -c7- | sort  | uniq -c | sort -nr | head -n 20
+from: https://unix.stackexchange.com/questions/15021/in-unix-how-to-find-the-most-commonly-used-commands-in-history-of-unix
