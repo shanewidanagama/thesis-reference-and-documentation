@@ -1,3 +1,7 @@
+#Data preparation
+module load StdEnv/2020
+module load samtools/1.10
+
 DBG2OLC 
 
 _______ 
