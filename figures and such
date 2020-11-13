@@ -1,0 +1,37 @@
+module load gcc/8.3.0 r/4.0.0     
+
+t3 <- read.csv("SRR7881464.readslength.txt", header=FALSE)     
+
+hist(t3$V1, main = "Pacbio Read Length Distribution", xlim = c(0,20000), ylim = c(0,1000000), xlab = "Pacbio Read Lengths (bp)") 
+
+  
+
+  
+
+ggplot2 -  
+
+install.packages("ggplot2") 
+
+  
+
+library(ggplot2) 
+
+aligning plots - https://stackoverflow.com/questions/41486027/ggplot2-how-to-align-the-bars-of-a-histogram-with-the-x-axis 
+
+  
+
+ggplot(t3, aes(x=V1)) + geom_histogram(binwidth=500) + xlim(0,20000) 
+
+Warning messages: 
+
+1: Removed 70182 rows containing non-finite values (stat_bin). 
+
+2: Removed 2 rows containing missing values (geom_bar). 
+
+? 
+
+  
+
+p <- ggplot(t3, aes(x=V1)) + geom_histogram(binwidth=500, boundary=0) + xlim(0,20000) 
+
+p + labs(x = "Pacbio Read Lengths (bp)", y = "Frequency of Reads") 
